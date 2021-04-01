@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'practice';
+  title: string = 'practice';
+  password = '';
+  includeLetters: boolean = false;
+
+  onChangeUseLetters() {
+    this.includeLetters = !this.includeLetters;
+  }
+
+  OnButtonClick() {
+    this.password = 'passsword';
+    console.log('Button was clicked');
+  }
+
+  getPassword() {
+    return this.password;
+  }
+
+  getname() {
+    return this.title;
+  }
+
+
+
+
+
+
 }
